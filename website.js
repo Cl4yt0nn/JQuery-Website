@@ -2,7 +2,7 @@
 let j = 0;
 let srcArr = ["ww.webp","jp.jpg","hs.webp","lph.jpg","finger.jpeg"];
 $(document).ready(function(){
-    $("#images").attr("src","Images/" + srcArr[j]);
+    $("#images").attr("src","./Images/" + srcArr[j]);
     $( "#accordion" ).accordion();
     $( document ).tooltip();
     $("#start").datepicker();
@@ -34,7 +34,7 @@ $(document).ready(function(){
     })
 })
 function cycleImage() {
-    $("#images").attr("src","Images/" + srcArr[j]);
+    $("#images").attr("src","./Images/" + srcArr[j]);
 }
 function enable() {
     document.getElementById("left").disabled = false;
