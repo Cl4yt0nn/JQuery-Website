@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Walter White's House</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="website.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="website.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28d4a90981.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Breaking Bad House</h1>
+    <nav id="navBar">
+        <div onclick="select(0)" id="home" class="navItem">Home</div>
+        <div onclick="select(1)" id="calendar" class="navItem">Calendar</div>
+        <div onclick="select(2)" id="visitNow" class="navItem">Visit Now</div>
+        <div onclick="select(3)" id="faq" class="navItem">FAQ</div>
+    </nav>
+    <div>
+
+    </div>
+    <div id="homePage">
+        <div id="photoGallery">
+            <button id="left"><i class="fa-solid fa-arrow-left"></i></button>
+            <img src="" id="images">
+            <button id="right"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div id="information">
+            <div class="vertB">Visiting the houses from the original Breaking Bad TV Show has never been so easy! Despite us not having the technical rights to let people in to tour these houses, our waiver requires our customers to be quiet when navigating the house as the homeowners are sleeping. We are very strict on the fact that if they are not quiet, they will take the fall when the owner inevitably call the police.</div>
+            <div class="horizB"><img src="/Images/happyww.webp"></div>
+            <div class="horizB"><img src="/Images/jphappy.webp"></div>
+            <div class="vertB">Our customers receive the best service from our dedicated workers who are perfect from the job. We are required to inform our potential and confirmed customers that these employees are ex-convicts, however they are good fits for the job as we descretly navigate the premises of the locations.</div>
+            <div class="vertB">Last year, our sales were a record-high! We received 1,900 new visitors to our website and we had seven purchasing customers. We aspire to make our services available to you, the consumers, for $1,399 and in exchange, you get to visit a couple of the major buildings in the best-selling franchise. Please visit our "Visit Now" page to plan your visit today!</div>
+            <div class="horizB"><img src="/Images/hshappy.jpg"></div>
+        </div>
+    </div>
+
+    <div id="calendarPage">
+        <img src="/Images/calendar.jpg">
+    </div>
+
+    <div id="visitPage">
+        <fieldset>
+            <form>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" title='i.e "John"'><br><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" title='i.e "Doe"'><br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" title='i.e (123)-456-7890'><br><br>
+                <label for="start">Planned Visit Start Date</label>
+                <input type="text" id="start"><br><br>
+                <label for="end">Planned Visit End Date:</label>
+                <input type="text" id="end"><br><br>
+                <label for="ssid">Social Security Number:</label>
+                <input type="number" id="ssid" title='i.e 316-01-4642'><br><br>
+                <label for="dog">Your First Dog's Name:</label>
+                <input type="text" id="dog" title='i.e Mortimus'><br><br>
+                <input type="button" value="Submit">
+            </form>
+        </fieldset>
+    </div>
+
+    <div id="faqPage">
+        <div id="accordion">
+            <h3>Is this a practical business?</h3>
+            <div><p>While nearly anybody has the option to travel to these locations themselves, our business provides a full in-depth tour that you simply wouldn't be able to experience by visiting yourself.</p></div>
+            <h3>Uno</h3>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odio dolorum enim exercitationem aliquid doloremque corrupti ad sed aperiam, ipsam obcaecati sapiente non vel praesentium hic nisi, asperiores corporis sit!</p></div>
+            <h3>Uno</h3>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odio dolorum enim exercitationem aliquid doloremque corrupti ad sed aperiam, ipsam obcaecati sapiente non vel praesentium hic nisi, asperiores corporis sit!</p></div>
+            <h3>Uno</h3>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odio dolorum enim exercitationem aliquid doloremque corrupti ad sed aperiam, ipsam obcaecati sapiente non vel praesentium hic nisi, asperiores corporis sit!</p></div>
+        </div>
+    </div>
+</body>
+</html>

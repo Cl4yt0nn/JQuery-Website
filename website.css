@@ -1,0 +1,148 @@
+* {
+    font-family:'Roboto Slab',sans-serif;
+    font-weight:300;
+}
+h1 {
+    font-weight:500;
+    font-size:50px;
+    text-align:center;
+}
+#navBar {
+    display:flex;
+    justify-content:space-evenly;
+}
+#navBar > div {
+    padding:30px;
+    font-size:25px;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    width:calc(25vw - 4px);
+    text-align:center;
+    background:white;
+    transition:0.5s;
+}
+#navBar > div:hover {
+    transition:0.5s;
+    background:lightgray !important;
+    width:30vw;
+    cursor:pointer;
+}
+#photoGallery {
+    display:flex;
+    width:100%;
+    margin:auto;
+    justify-content:space-evenly;
+    margin-top:5vh;
+}
+#images {
+    width:50vw;
+    height:30vw;
+    border:3px solid black;
+    background:black;
+}
+#left, #right {
+    font-size:60px;
+    padding:20px;
+    display:flex;
+    border-radius:50%;
+    width:7vw;
+    height:7vw;
+    justify-content:center;
+    align-items:center;
+    background:#74d5ff;
+    display:flex;
+    justify-self:center;
+    margin-top:12.5vw;
+}
+#left:hover, #right:hover {
+    background:#5297b5;
+    cursor:pointer;
+}
+#information {
+    display:grid;
+    grid-template-columns:auto auto;
+    gap:1vw;
+    width:80vw;
+    margin-left:9vw;
+    margin-top:5vh;
+}
+#information > div {
+    height:37vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-size:20px;
+    padding:1vw;
+}
+#information > div > img {
+    width:90%;
+}
+.horizB {
+    border-left:2px solid #a8a8a8;
+    border-right:2px solid #a8a8a8;
+}
+.vertB {
+    border-top:2px solid #a8a8a8;
+    border-bottom:2px solid #a8a8a8;
+}
+#calendarPage > img {
+    width:80vw;
+    margin-left:10vw;
+}
+fieldset {
+    width:70%;
+    margin-top:5vh;
+    display:flex;
+    margin-left:15%;
+    justify-content:center;
+    font-size:22px;
+}
+fieldset > form > input {
+    width:100%;
+    font-size:18px;
+    padding:10px;
+}
+#accordion {
+    margin-top:5vh;
+    width:80%;
+    margin-left:10%;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1020px) {
+    .fa-solid {
+        font-size:40px;
+    }
+    #information > div {
+        font-size:16px;
+    }
+}
+@media (max-width:740px) {
+    .fa-solid {
+        font-size:25px;
+    }
+    .navItem {
+        font-size:18px !important;
+    }
+    #information > div {
+        font-size:12px;
+    }
+}
+@media (max-width:620px) {
+    h1 {
+        font-size:35px;
+    }
+    #information {
+        grid-template-columns:auto;
+    }
+    #information > div > img {
+        width:50%;
+    }
+}
